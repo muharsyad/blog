@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Muhammad Arsyad</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css" integrity="sha512-MqL4+Io386IOPMKKyplKII0pVW5e+kb+PI/I3N87G3fHIfrgNNsRpzIXEi+0MQC0sR9xZNqZqCYVcC61fL5+Vg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="assets/profile.jpg" type="image/x-icon">
+</head>
+<body>
+    <!--Navbar-->
+    <div class="navbar" id="navbar-responsive">
+        <a href="/muharsyad.github.io/" class="name">Muhammad Arsyad</a>
+        <a href="/muharsyad.github.io/#contact" class="right">Contact</a>
+        <a href="/services/" class="right">Services</a>
+        <a href="/blog/" class="right">Blog</a>
+        <a href="/course/" class="right">Learning Hub</a>
+        <a href="/portfolio/" class="right">Portfolio</a>
+        <a href="/muharsyad.github.io/#about-me" class="right">About Me</a>
+        <a href="javascript:void(0);" class="icon" onclick="navbar()">
+            <i class="ri-menu-line"></i>
+        </a>
+    </div>
+
+    <div class="blog-section">
+        <h2><i class="ri-newspaper-fill"></i> Blog & Artikel</h2>
+        <p style="margin-bottom: 30px; text-align: center;">Baca tulisan terbaru tentang AI, Machine Learning, dan Data Science!</p>
+
+        <!-- Filter Buttons -->
+        <div class="filter-buttons">
+            <button onclick="filterProjects('all')">Semua</button>
+            <button onclick="filterProjects('ai')">AI / Machine Learning</button>
+            <button onclick="filterProjects('nlp')">Natural Language Processing</button>
+            <button onclick="filterProjects('data')">Data Analysis</button>
+        </div>
+
+        <div class="container">
+
+            <div class="card" data-category="ai">
+                <span class="badge ai">🤖 AI</span>
+                <img src="assets/thumbnail-4.png" alt="">
+                <h3>Bagaimana AI Mengubah Industri?</h3>
+                <p>Eksplorasi dampak AI dalam berbagai bidang, dari kesehatan hingga bisnis.</p>
+                <p><b>Dipublikasikan:</b> 10 Februari 2025</p>
+                <div class="links">
+                    <a href="#"><i class="ri-book-open-fill"></i> Baca Selengkapnya</a>
+                </div>
+            </div>
+    
+            <div class="card" data-category="ai">
+                <span class="badge ml">📈 Machine Learning</span>
+                <img src="assets/thumbnail-4.png" alt="">
+                <h3>Panduan Linear Regression untuk Pemula</h3>
+                <p>Memahami regresi linear dan implementasinya dengan Python.</p>
+                <p><b>Dipublikasikan:</b> 5 Februari 2025</p>
+                <div class="links">
+                    <a href="#"><i class="ri-book-open-fill"></i> Baca Selengkapnya</a>
+                </div>
+            </div>
+    
+            <div class="card" data-category="ai">
+                <span class="badge data">📊 Data Science</span>
+                <img src="assets/thumbnail-4.png" alt="">
+                <h3>Data Cleaning: Langkah Penting dalam Analisis</h3>
+                <p>Kenapa data cleaning itu krusial dalam proyek data science?</p>
+                <p><b>Dipublikasikan:</b> 1 Februari 2025</p>
+                <div class="links">
+                    <a href="#"><i class="ri-book-open-fill"></i> Baca Selengkapnya</a>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2025 Muhammad Arsyad. All rights reserved.</p>
+            <p>"Solving Problems with AI, Data, and Mathematics"</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/muhammad-arsyad-59865120a/" target="_blank"><i class="ri-linkedin-box-fill"></i></a>
+                <a href="https://github.com/muharsyad" target="_blank"><i class="ri-github-fill"></i></a>
+                <a href="https://www.instagram.com/muha.rsyd/" target="_blank"><i class="ri-instagram-fill"></i></a>
+                <a href="mailto:muharsyad2201@gmail.com"><i class="ri-mail-fill"></i></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
